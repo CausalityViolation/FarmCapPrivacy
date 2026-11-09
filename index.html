@@ -4,6 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Farm Capitalist: Privacy Policy</title>
+<link rel="alternate" hreflang="en" href="https://causalityviolation.github.io/FarmCapPrivacy/">
+<link rel="alternate" hreflang="ja" href="https://causalityviolation.github.io/FarmCapPrivacy/ja.html">
+<link rel="alternate" hreflang="x-default" href="https://causalityviolation.github.io/FarmCapPrivacy/">
+<script>
+  /* A phone set to Japanese is sent on to the Japanese page, and the link back adds ?lang=en so that the English page can still be read.
+     Whatever comes after # (the #delete-data link in the Play Console) is kept. Nothing else changes: with scripts off, this page is shown. */
+  try {
+    var lang = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+    if (/^ja\b/i.test(lang) && !/[?&]lang=en\b/.test(location.search)) location.replace('ja.html' + location.hash);
+  } catch (e) {}
+</script>
 <style>
   :root { --bg:#fbf6e9; --ink:#2b2013; --soft:#6b5232; --line:#d9c9a3; --link:#8a4b12; }
   @media (prefers-color-scheme: dark) { :root { --bg:#1c1710; --ink:#f0e6cf; --soft:#b8a785; --line:#3d3322; --link:#e0a25a; } }
