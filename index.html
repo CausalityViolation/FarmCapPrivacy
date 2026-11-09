@@ -22,20 +22,21 @@
 <body>
 <main>
 <h1>Farm Capitalist: Privacy Policy</h1>
-<p class="meta">Last updated: 3 November 2026</p>
+<p class="meta">Last updated: 8 November 2026 &middot; <a href="ja.html" hreflang="ja" lang="ja">日本語版はこちら</a> (Japanese version)</p>
 
-<p>Farm Capitalist ("the game") is an idle farming game for Android made by <strong>Causality</strong> ("we", "us"). This policy explains what information the game and the services it uses handle, why, and what choices you have. Contact: <a href="mailto:dev.causality@gmail.com">dev.causality@gmail.com</a>.</p>
+<p>Farm Capitalist ("the game") is an idle farming game for Android made by <strong>Causality</strong> ("we", "us"). This policy explains what information the game and the services it uses handle, why, and what choices you have. Contact: <a href="mailto:dev.causality@gmail.com">dev.causality@gmail.com</a>. The game's <a href="https://causalityviolation.github.io/FarmCapTerms/">Terms of Service</a> are on a separate page.</p>
 
 <h2>The short version</h2>
 <ul>
-  <li>You do not need an account to play. We do not ask for your phone number, contacts, photos or location. The only time the game asks who you are is if you choose the optional cloud save (section 4), which signs you in with your Google account.</li>
-  <li>Your farm is saved on your own device. Two optional features send some data online: the leaderboard (section 3), where your farm name, farmer look and Golden Seeds are stored so other players can see them, and cloud save (section 4), where a scrambled copy of your farm is kept in your Google account so you can restore it on a new phone.</li>
+  <li>You do not need an account to play. We do not ask for your phone number, contacts, photos or location. The only time the game asks who you are is if you choose the optional cloud save (section 5), which signs you in with your Google account.</li>
+  <li>Your farm is saved on your own device. Three optional features send some data online: the leaderboard (section 3) and the limited-time events (section 4), where your farm name, farmer look and score are stored so other players can see them, and cloud save (section 5), where a scrambled copy of your farm is kept in your Google account so you can restore it on a new phone.</li>
   <li>The game shows ads and sells optional in-app purchases. The services that do this (Google AdMob, Google Play and RevenueCat) process some technical data, described below.</li>
   <li>With your agreement where the law requires it, the game sends anonymous game statistics and crash reports (Google Firebase) so we can fix problems and balance the game. You can switch this off in Settings.</li>
 </ul>
 
 <h2>1. Information stored on your device</h2>
-<p>Your progress (farm, gold, gems, settings and purchase status) is saved in encrypted storage on your device. We do not receive it, and the game does not back it up anywhere unless you turn on cloud save (section 4). Uninstalling the game or clearing its data deletes the copy on your device.</p>
+<p>Your progress (farm, gold, gems, settings and purchase status) is saved in encrypted storage on your device. We do not receive it, and the game does not back it up anywhere unless you turn on cloud save (section 5). Uninstalling the game or clearing its data deletes the copy on your device.</p>
+<p><strong>Reminders (optional).</strong> If you allow reminders, the game asks Android to show a notification on your phone later, for example when something is ready to collect. Android asks for your permission first. The reminders are scheduled on your phone: nothing about them is sent to us or to anyone else. You can switch them off in Settings or in your phone's notification settings.</p>
 
 <h2>2. Information handled by the services in the game</h2>
 <table>
@@ -47,13 +48,13 @@
   </tr>
   <tr>
     <td><strong>Firebase Analytics, Crashlytics and Remote Config</strong> (Google)</td>
-    <td>Understanding how the game is used (for example, which crops players unlock), finding and fixing crashes, and receiving small settings for the game, such as how long a welcome bonus lasts, so they can be adjusted without a new version of the game. These settings are fetched only when you allow anonymous statistics.</td>
+    <td>Understanding how the game is used (for example, which crops players unlock, which parts of the game are opened, and which offers are looked at), finding and fixing crashes, and receiving small settings for the game, such as how long a welcome bonus lasts, so they can be adjusted without a new version of the game. These settings are fetched only when you allow anonymous statistics.</td>
     <td>Game events (such as crop unlocked, mission claimed, purchase made, ad rewarded), an app instance identifier (also used to fetch the settings), device model, operating system version, app version, approximate region derived from the IP address, and crash logs and diagnostics. Events never contain your name, email address or other directly identifying details.</td>
   </tr>
   <tr>
     <td><strong>Firebase Authentication and Cloud Firestore</strong> (Google)</td>
-    <td>Running the optional leaderboard, only after you join it, and the optional cloud save, only after you turn it on.</td>
-    <td>Leaderboard: a randomly generated anonymous player ID, the farm name you picked (two words from fixed lists), your farmer look, your Golden Seeds and the seeds you earned this week, and the time of the last update. No name, email address or typed text.<br>Cloud save: your Google account ID, email address and name (kept by Firebase Authentication when you sign in with Google), and an encrypted copy of your farm with the time it was saved.</td>
+    <td>Running the optional leaderboard and events, only after you join them, and the optional cloud save, only after you turn it on.</td>
+    <td>Leaderboard: a randomly generated anonymous player ID, the farm name you picked (two words from fixed lists), your farmer look, your Golden Seeds and the seeds you earned this week, and the time of the last update. Events: the same player ID, farm name and farmer look, your event score, and the time you joined and the time of the last update. No name, email address or typed text.<br>Cloud save: your Google account ID, email address and name (kept by Firebase Authentication when you sign in with Google), and an encrypted copy of your farm with the time it was saved.</td>
   </tr>
   <tr>
     <td><strong>RevenueCat</strong></td>
@@ -62,52 +63,100 @@
   </tr>
   <tr>
     <td><strong>Google Play</strong> (Google)</td>
-    <td>Distributing the game and processing payments.</td>
-    <td>Handled under Google's own terms and privacy policy.</td>
+    <td>Distributing the game, processing payments, and the rating card and updates described on the right.</td>
+    <td>Handled under Google's own terms and privacy policy. When you use them, Google Play also shows its own rating card and its own update screen (for example the game's <em>Update needed</em> screen); the game sends nothing to us through them.</td>
   </tr>
 </table>
 <p>These providers act under their own privacy policies: <a href="https://policies.google.com/privacy">Google</a>, <a href="https://firebase.google.com/support/privacy">Firebase</a> and <a href="https://www.revenuecat.com/privacy">RevenueCat</a>. Some of them process data in countries outside your own, including the United States, under safeguards such as the EU Standard Contractual Clauses or the EU-US Data Privacy Framework.</p>
 
 <h2>3. The leaderboard (optional)</h2>
 <p>The game has a "Top Farmers" leaderboard. It is off until you tap <em>Join the race</em>; before that, nothing is sent and no player ID is created. When you join, the game signs in anonymously (no account, no email) and stores your farm name (two words you pick from lists; you cannot type your own), your farmer look, your Golden Seeds and the Golden Seeds you earned this week. Other players who open the leaderboard can see these items next to your place; nothing else about you is shown.</p>
-<p>You can leave at any time with <em>Leave leaderboard</em> in the leaderboard screen, which deletes your entries. Choosing <em>Reset farm</em> in Settings deletes them too, and entries of players who have not opened the game for about 90 days are removed automatically. Weekly entries are removed a few weeks after their week ends.</p>
+<p>You can leave at any time with <em>Leave leaderboard</em> in the leaderboard screen, which deletes your entries. Choosing <em>Start a new farm</em> in Settings removes them too, and entries of players who have not opened the game for about 90 days are removed automatically. Weekly entries are removed a few weeks after their week ends.</p>
 
-<h2>4. Cloud save (optional)</h2>
+<h2>4. Events (optional)</h2>
+<p>The game runs limited-time events (the first is <em>Market Day</em>): a one-week mini farm that every player starts from nothing, with its own ranked board. Events are off until you tap <em>Join</em> on the invitation, and the game needs an internet connection to join. Before that, nothing is sent.</p>
+<p><strong>What is stored.</strong> When you join, the game signs in anonymously, with the same anonymous player ID as the leaderboard (no account, no email), and creates an entry for you on that event's board: the two farm-name words you picked, your farmer look, your event score, the time you joined and the time of the last update. While the event runs the game updates your score when it has changed, at most every 20 seconds. Other players on the same board can see your farm name, farmer look and score next to your place; nothing else about you is shown. The event farm itself (its coins, crops and upgrades) stays on your phone.</p>
+<p><strong>What it is used for.</strong> To rank the players and to work out your place and your prize when the event ends. The prizes are items in the game (gems and cosmetics), never money.</p>
+<p><strong>Leaving and deleting.</strong> <em>Leave</em> on the event page deletes your entry and forgets the event farm on your phone. <em>Delete cloud data</em> (section 5) also removes your event entry. Entries are deleted automatically about three weeks after the event ends.</p>
+
+<h2>5. Cloud save (optional)</h2>
 <p>Cloud save is off until you turn it on in Settings. Before that, nothing is sent and you are not signed in. When you turn it on, the game opens Google's own sign-in screen and you pick a Google account. The game then keeps one copy of your farm in that account's storage, so it can come back on a new phone or after you reinstall the game. If you play on two phones, it also keeps them in step, and asks you which farm to keep when they are different, so that one is never replaced without your choice.</p>
-<p><strong>What is stored.</strong> Firebase Authentication keeps your Google account ID, email address and name for the account you picked. We can see them in our Firebase project, we do not show them to other players, and they are not part of your farm. Cloud Firestore keeps your farm: your progress, gems, settings and the status of your purchases, encrypted by the game, together with the time it was saved. Only you, signed in to that account, can read or change it. The sign-in links your leaderboard player ID to your Google account, if you also use the leaderboard; other players still see only the farm name, farmer look and Golden Seeds described in section 3.</p>
+<p><strong>What is stored.</strong> Firebase Authentication keeps your Google account ID, email address and name for the account you picked. We can see them in our Firebase project, we do not show them to other players, and they are not part of your farm. Cloud Firestore keeps your farm: your progress, gems, settings and the status of your purchases, encrypted by the game, together with the time it was saved. Only you, signed in to that account, can read or change it. The sign-in links your leaderboard player ID to your Google account, if you also use the leaderboard; other players still see only the farm name, farmer look and score described in sections 3 and 4.</p>
 <p><strong>What it is used for.</strong> Only to restore and update your farm. We do not use your email address to contact you, for advertising or for analytics.</p>
 <p><strong>Turning it off.</strong> Settings &gt; Cloud save &gt; switch off. The game stops saving to the cloud on that phone. The copy that is already there stays until you delete it, so you can turn it on again later.</p>
-<p id="delete-data"><strong>Deleting your cloud save and account.</strong> In the game, open Settings &gt; Cloud save &gt; <em>Delete cloud data</em> and tap twice. This deletes the cloud copy of your farm, your leaderboard entries and the Firebase account for your Google sign-in. Your farm on the phone is not touched. You can also ask us to do it by emailing the contact address below from the address of your Google account, and we will delete it within 30 days.</p>
+<p id="delete-data"><strong>Deleting your cloud save and account.</strong> In the game, open Settings &gt; Cloud save &gt; <em>Delete cloud data</em> and tap twice. This deletes the cloud copy of your farm, your leaderboard and event entries and the Firebase account for your Google sign-in. Your farm on the phone is not touched. You can also ask us to do it by emailing the contact address below from the address of your Google account, and we will delete it within 30 days.</p>
 
-<h2>5. Your choices</h2>
+<h2>6. Your choices</h2>
 <ul>
   <li><strong>Leaderboard.</strong> Joining is optional. Use <em>Leave leaderboard</em> to remove your entries.</li>
-  <li><strong>Cloud save.</strong> Optional. Switch it off in Settings &gt; Cloud save, or use <em>Delete cloud data</em> to remove the cloud copy and the account link (section 4).</li>
+  <li><strong>Events.</strong> Joining is optional. Use <em>Leave</em> on the event page to remove your entry (section 4).</li>
+  <li><strong>Cloud save.</strong> Optional. Switch it off in Settings &gt; Cloud save, or use <em>Delete cloud data</em> to remove the cloud copy and the account link (section 5).</li>
+  <li><strong>Reminders.</strong> Optional. Switch them off in Settings, or in your phone's notification settings.</li>
   <li><strong>Anonymous stats.</strong> In the game, open Settings and switch <em>Anonymous stats</em> off to stop game statistics and crash reports. If you are in a region where consent is required, nothing is collected until you agree in the consent message.</li>
   <li><strong>Ad consent.</strong> If you are in the EEA, UK or Switzerland, Settings shows <em>Privacy choices</em>, where you can change or withdraw your consent at any time.</li>
   <li><strong>Advertising ID.</strong> In your Android settings you can reset your advertising ID or opt out of ads personalisation (Settings &gt; Privacy &gt; Ads, the exact path depends on your device).</li>
   <li><strong>Purchases.</strong> Manage or cancel subscriptions in the Google Play Store app under Payments &amp; subscriptions.</li>
 </ul>
 
-<h2>6. Legal basis (EEA, UK and Switzerland)</h2>
-<p>We rely on your <strong>consent</strong> for advertising identifiers and for analytics and crash reporting, which you can withdraw at any time as described above. We rely on <strong>performance of a contract</strong> to process purchases you make and to run the leaderboard and the cloud save you choose to use, and on our <strong>legitimate interest</strong> in running and securing the game for the technical data needed to deliver it.</p>
+<h2>7. Legal basis (EEA, UK and Switzerland)</h2>
+<p>We rely on your <strong>consent</strong> for advertising identifiers and for analytics and crash reporting, which you can withdraw at any time as described above. We rely on <strong>performance of a contract</strong> to process purchases you make and to run the leaderboard, the events and the cloud save you choose to use, and on our <strong>legitimate interest</strong> in running and securing the game for the technical data needed to deliver it.</p>
 
-<h2>7. Retention</h2>
-<p>We keep no copy of your farm unless you turn on cloud save. The cloud copy, and the Google account ID, email address and name that Firebase Authentication keeps for it, are kept until you delete them (section 4) or ask us to. Leaderboard entries are kept until you leave the leaderboard or reset your farm, and are deleted automatically after about 90 days without the game being opened (weekly entries a few weeks after their week ends). Analytics and crash data is kept by Google for a limited period set in our Firebase project settings and is then deleted automatically. Purchase records are kept by RevenueCat and Google Play as long as needed to provide the purchases and to meet legal obligations.</p>
+<h2>8. Retention</h2>
+<p>We keep no copy of your farm unless you turn on cloud save. The cloud copy, and the Google account ID, email address and name that Firebase Authentication keeps for it, are kept until you delete them (section 5) or ask us to. Leaderboard entries are kept until you leave the leaderboard or start a new farm, and are deleted automatically after about 90 days without the game being opened (weekly entries a few weeks after their week ends). Event entries are kept until you leave the event, and are deleted automatically about three weeks after it ends. Analytics and crash data is kept by Google for a limited period set in our Firebase project settings and is then deleted automatically. Purchase records are kept by RevenueCat and Google Play as long as needed to provide the purchases and to meet legal obligations.</p>
 
-<h2>8. Your rights</h2>
+<h2>9. Your rights</h2>
 <p>Depending on where you live, you may have the right to access, correct or delete personal data, to restrict or object to its processing, to data portability, and to withdraw consent. Because we do not know who you are (unless you used cloud save, where the email address of your Google account lets us find it), we usually cannot look up your data without help from you: tell us what you need using the contact address above, and we will help where we can. Resetting your advertising ID and uninstalling the game also detach the game from the data collected so far. If you are in the EEA, you can complain to your local data protection authority (in Sweden: Integritetsskyddsmyndigheten, IMY).</p>
 
-<h2>9. Children</h2>
+<h2>10. Players in Japan</h2>
+<p>This section is for players in Japan (the whole policy is also available <a href="ja.html" hreflang="ja" lang="ja">in Japanese</a>). The rest of the policy applies to you as well.</p>
+<ul>
+  <li><strong>Who handles your information.</strong> Causality, <a href="mailto:dev.causality@gmail.com">dev.causality@gmail.com</a>. Our postal address is available on request by email.</li>
+  <li><strong>Why we use it.</strong> To provide and run the game (saving your farm, the leaderboard and events, purchases, ads), to restore your farm on a new phone if you use cloud save, to answer your messages, to understand how the game is used, fix crashes and improve the game, to prevent cheating and abuse, and to meet legal obligations. We do not use it for any other purpose without telling you first.</li>
+  <li><strong>Sharing.</strong> We do not sell your personal information and do not give it to third parties, except to the services in section 2, which handle it for us or send it as described below, and where the law requires it.</li>
+  <li><strong>Outside Japan.</strong> These services run on servers in the United States and other countries where Google and RevenueCat operate. Their own privacy policies (linked in section 2) describe how they protect the data.</li>
+  <li><strong>Your requests.</strong> You can ask us to tell you what we hold about you, to correct it, to stop using it or to delete it. Email us from the address of your Google account if you used cloud save; the game cannot tell otherwise who you are, so we may ask you to help us find your data. We answer without undue delay.</li>
+</ul>
+<p><strong>Information the game sends to other companies (外部送信).</strong> Besides our own servers, the game sends information to these companies' services:</p>
+<table>
+  <tr><th>Service and company</th><th>Information sent</th><th>Purpose</th></tr>
+  <tr>
+    <td>Google AdMob (Google LLC)</td>
+    <td>Advertising ID, IP address, device and app information, how you interact with ads</td>
+    <td>Showing and measuring the rewarded ads you choose to watch, and preventing ad fraud</td>
+  </tr>
+  <tr>
+    <td>Firebase Analytics and Remote Config (Google LLC)</td>
+    <td>An app instance identifier, game events (such as crop unlocked, purchase made, ad rewarded), device model, operating system and app version, approximate region from the IP address, advertising ID</td>
+    <td>Understanding how the game is used so we can improve and balance it, and adjusting small game settings without a new version</td>
+  </tr>
+  <tr>
+    <td>Firebase Crashlytics (Google LLC)</td>
+    <td>Crash logs, device model, operating system and app version, an installation identifier</td>
+    <td>Finding and fixing crashes</td>
+  </tr>
+  <tr>
+    <td>Firebase Authentication and Cloud Firestore (Google LLC), only if you use the leaderboard, events or cloud save</td>
+    <td>The items listed for them in section 2</td>
+    <td>Running the leaderboard, the events and the cloud save</td>
+  </tr>
+  <tr>
+    <td>RevenueCat (RevenueCat, Inc.)</td>
+    <td>An anonymous user ID, purchase and subscription records, device and app information</td>
+    <td>Managing and restoring in-app purchases and subscriptions</td>
+  </tr>
+</table>
+<p>Game statistics and crash reports (the second and third rows) are sent only while <em>Anonymous stats</em> in Settings is on. In Japan no consent message is shown, so it is on until you switch it off: open Settings and switch <em>Anonymous stats</em> off at any time. Ads need the advertising ID: you can reset it or opt out of ads personalisation in your Android settings.</p>
+
+<h2>11. Children</h2>
 <p>The game is not directed at children under 13 (or the higher minimum age in your country), and we do not knowingly collect personal data from them. If you believe a child has provided data, contact us and we will help remove it.</p>
 
-<h2>10. Changes to this policy</h2>
+<h2>12. Changes to this policy</h2>
 <p>If we change this policy, we will update the date at the top and publish the new version at this address. If a change affects how your data is used in a significant way, we will also tell you in the game.</p>
 
-<h2>11. Feedback by email</h2>
+<h2>13. Feedback by email</h2>
 <p>Settings &gt; Send feedback opens your own email app with a message to the contact address below. Nothing is sent until you press Send; the game only adds its version number. If you send it, we receive your email address and what you wrote, and use them only to answer you and to improve the game. Ask us to delete the message and we will.</p>
 
-<h2>12. Contact</h2>
+<h2>14. Contact</h2>
 <p><strong>Causality</strong><br>
 <a href="mailto:dev.causality@gmail.com">dev.causality@gmail.com</a></p>
 </main>
